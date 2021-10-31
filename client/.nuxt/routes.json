@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Login",
+    "path": "/Login",
+    "component": "/Users/godofredofabi/Documents/Projects/Frontend/app/client/pages/Login.vue",
+    "chunkName": "pages/Login"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/godofredofabi/Documents/Projects/Frontend/app/client/pages/index.vue",
+    "chunkName": "pages/index"
+  }
+]
