@@ -1,10 +1,13 @@
 <template>
-  <a href="#" @click.prevent="func_login">Login</a>
+	<div>
+		<a href="#" @click.prevent="func_login">Login</a>
+	</div>
 </template>
 
 <script>
 export default {
- methods: {
+	middleware: ['guest'],	
+ 	methods: {
 		func_login() {
 			this.$auth.loginWith('laravelSanctum', {
 				data: {

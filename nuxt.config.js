@@ -42,6 +42,9 @@ export default {
     '@nuxtjs/auth-next',
     '@nuxtjs/axios'
   ],
+  // router: {
+  //   middleware: ['auth']
+  // },
 
   auth: {
     strategies: {
@@ -51,10 +54,23 @@ export default {
         endpoints: {
           login: {
             url: '/api/login'
-          }
-
+          },
+          logout: {
+            url: '/api/logout'
+          },
+          user: {
+            url: '/api/user'
+          },
+        },
+        user: {
+          property: false
         }
       }
+    },
+    redirect: {
+      login: '/login',
+      logout: '/',
+      home: '/'
     }
   },
 
